@@ -1,17 +1,16 @@
 
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './pages/store';
-import Counter from './Counter';
-import './style.css'
+import './App.css';
+import MainPage from './pages/mainPage';
+import UsersPage from './pages/userPage/usersPage';
 
-
-const App = () => {
+function App() {
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
-  );
-};
+  <div className="App">
+    <MainPage/>
+    <h1>---</h1>
+    <UsersPage/>   
+  </div>
+);
+}
 
 export default App;
